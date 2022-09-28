@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, greenyellow, dodgerblue);
+}
+h1 {
+    font-family: "Sansita Swashed", cursive;
+}
+form {
+    background-color: rgba(245, 245, 245, 0.514);
+    padding : 50px;
+    border-radius: 5px;
+}
+input,select {
+    border : none;
+}
+input ,select{
+    margin-bottom : 10px;
+    height: 25px;
+
+}
+input, label, select, button {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+button {
+    font-size: large;
+    font-weight: bolder;
+    background-color: rgb(126, 207, 251);
+    border: none;
+    height: 30px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+button:hover {
+    border: 1px;
+    background-color: lightgreen;;
+}

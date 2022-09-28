@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires </title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="" id="myForm">
+        <h1>Formulaire :</h1>
+        <div>
+            <label for="name">Nom :</label>
+            <input type="text" name="name_user" id="name">
+        </div>
+        <div>
+            <label for="first_name">Prénom :</label>
+            <input type="text" name="first_name-user" id="first_name">
+        </div>
+        <div>
+            <label for="phone">N° Tel :</label>
+            <input type="tel" id="phone" name="phone_user" maxlength="7" placeholder="000-000" pattern="[0-9]{3}[\-][0-9]{3}">
+        </div>
+        <div>
+            <label for="email">Email :</label>
+            <input type="email" name="email_user" id="email">
+        </div>
+        <div>
+            <label for="birthday">Date de naissance :</label>
+            <input type="date" name="birth_user" id="birthday" max="2017-04-20" required>
+            <!-- <input type="number" name="day" id="day" maxlength="2">
+            <select id="month" name="month">
+                <option value="">-- Mois</option>
+                <option>Janvier</option>
+                <option value="fevrier">Février</option>
+                <option>Mars</option>
+                <option>Avril</option>
+                <option>Mai</option>
+                <option>Juin</option>
+                <option>Juillet</option>
+                <option>Août</option>
+                <option>Septembre</option>
+                <option>Octobre</option>
+                <option>Novembre</option>
+                <option>Décembre</option>
+            </select>
+            <input type="number" name="year" id="year" maxlength="4" max="2006"> -->
+        </div>
+        <hr>
+        <div>
+            <label for="adresse">Adresse :</label>
+            <input type="text" name="adresse" id="adresse" size="50" placeholder="N° de rue ">
+            <select name="commune" id="commune">
+                <option value="">-- Communes</option>
+                <option value="Blp">Boulouparis</option>
+                <option value="brl">Bourail</option>
+                <option value="dmb">Dumbéa</option>
+                <option value="frn">Farino</option>
+                <option value="hgn">Hienghène</option>
+                <option value="idp">Ile des pins</option>
+                <option value="Kone">Kone</option>
+                <option value="kmc">Koumac</option>
+                <option value="lfoa">La Foa</option>
+                <option value="lifou">Lifou</option>
+                <option value="mare">Maré</option>
+                <option value="md">Mont-dore</option>
+                <option value="nou">Nouméa</option>
+                <option value="ouvea">Ouvéa</option>
+                <option value="paita">Païta</option>
+                <option value="pdm">Poindimié</option>
+                <option value="pmb">Pouembout</option>
+                <option value="touho">Touho</option>
+                <option value="yate">Yaté</option>
+            </select>
+            <select name="province" id="province">
+                <option value="">-- Province</option>
+                <option value="Nord">Province Nord</option>
+                <option value="Sud">Province Sud</option>
+                <option value="ile">Province des Iles</option>
+            </select>
+        </div>
+        <button type="submit" id="valide" onclick="valider()">Valider</button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
